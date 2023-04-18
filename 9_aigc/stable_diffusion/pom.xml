@@ -99,8 +99,8 @@
 
         <dependency>
             <groupId>ai.djl.pytorch</groupId>
-            <artifactId>pytorch-native-cu117</artifactId>
-            <classifier>win-x86_64</classifier>
+            <artifactId>pytorch-native-cpu</artifactId>
+            <classifier>osx-aarch64</classifier>
             <version>1.13.0</version>
             <scope>runtime</scope>
         </dependency>
