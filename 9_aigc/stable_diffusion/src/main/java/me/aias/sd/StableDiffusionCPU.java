@@ -164,8 +164,7 @@ public class StableDiffusionCPU {
     private static NDList SDTextEncoder(NDList input)
             throws ModelNotFoundException, MalformedModelException, IOException,
             TranslateException {
-        Criteria<NDList, NDList> criteria =
-                Criteria.builder()
+        Criteria<NDList, NDList> criteria = Criteria.builder()
                         .setTypes(NDList.class, NDList.class)
                         .optModelUrls(sdArtifacts)
                         .optModelName("text_encoder")
